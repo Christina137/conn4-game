@@ -88,9 +88,11 @@ public class BoardPanelAi extends JPanel {
                 jLabel.setText(showplayer() + " Turn!");
                 if (board.containsWin()){
                     option1();
+                    return;
                 }
                 if (board.isTie()){
                     option2();
+                    return;
                 }
                 
                 //origin ai move
@@ -98,9 +100,11 @@ public class BoardPanelAi extends JPanel {
                 AI.smartMove();
                 if (board.containsWin()){
                     option1();
+                    return;
                 }
                 if (board.isTie()){
                     option2();
+                    return;
                 }
                 jLabel.setText(showplayer() + " Turn!");
             }
