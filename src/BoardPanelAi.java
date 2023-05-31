@@ -89,6 +89,10 @@ public class BoardPanelAi extends JPanel {
                 if (board.containsWin()){
                     option1();
                 }
+                if (board.isTie()){
+                    option2();
+                }
+                
                 //origin ai move
 //                AI.makeMove();                
                 AI.smartMove();
