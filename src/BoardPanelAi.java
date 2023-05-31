@@ -88,6 +88,9 @@ public class BoardPanelAi extends JPanel {
                 jLabel.setText(showplayer() + " Turn!");
                 //origin ai move
 //                AI.makeMove();
+                if (board.containsWin()){
+                    option1();
+                }
                 AI.smartMove();
                 if (board.containsWin()){
                     option1();
